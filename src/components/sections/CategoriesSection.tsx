@@ -7,7 +7,7 @@ const categories = [
     description: "Discover the art of Bandhani tie-dye, Ajrakh block printing, and legendary Rajasthani fabrics",
     gameCount: 5,
     icon: "🧵",
-    gradient: "bg-gradient-to-br from-primary to-primary/80",
+    gradient: "bg-gradient-to-br from-maroon to-maroon/80",
     patternColor: "#d4a574"
   },
   {
@@ -15,7 +15,7 @@ const categories = [
     description: "Explore Phad paintings, blue pottery, lac bangles, and traditional craftsmanship",
     gameCount: 4,
     icon: "🎨",
-    gradient: "bg-gradient-to-br from-secondary to-secondary/80",
+    gradient: "bg-gradient-to-br from-pink-city to-dusty-rose",
     patternColor: "#f5c542"
   },
   {
@@ -47,28 +47,35 @@ const categories = [
     description: "Celebrate Pushkar Mela, Teej, Gangaur, and vibrant Rajasthani celebrations",
     gameCount: 4,
     icon: "🎉",
-    gradient: "bg-gradient-to-br from-secondary to-peacock/80",
+    gradient: "bg-gradient-to-br from-maroon to-peacock/80",
     patternColor: "#fff5e6"
   }
 ];
 
 export const CategoriesSection = () => {
   return (
-    <section className="py-16 md:py-24 container mx-auto px-4">
-      {/* Section header */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-display text-primary mb-4">
+    <section className="py-20 md:py-28 container mx-auto px-4">
+      {/* Section header with palace styling */}
+      <div className="text-center mb-14">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <span className="text-mustard">✦</span>
+          <span className="text-pink-city text-2xl">❋</span>
+          <span className="text-mustard">✦</span>
+        </div>
+        <h2 className="text-3xl md:text-5xl font-display text-maroon mb-5 text-shadow-warm">
           Explore the Colors of Rajasthan
         </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          Dive into six vibrant categories, each filled with interactive games that bring Rajasthani culture to life
-        </p>
+        <div className="manuscript-panel max-w-2xl mx-auto px-6 py-3">
+          <p className="text-muted-foreground">
+            Dive into six vibrant categories, each filled with interactive games that bring Rajasthani culture to life
+          </p>
+        </div>
       </div>
 
-      <DecorativeDivider className="mb-12" />
+      <DecorativeDivider className="mb-14" />
 
-      {/* Categories grid - asymmetric masonry style */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      {/* Categories grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {categories.map((category, index) => (
           <CategoryCard
             key={category.title}

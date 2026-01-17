@@ -6,88 +6,104 @@
 
 @layer base {
   :root {
-    /* Rajasthani Color Palette */
-    --background: 42 35% 95%; /* Warm sand */
-    --foreground: 240 10% 15%; /* Deep charcoal */
-
-    --card: 40 40% 97%; /* Cream */
-    --card-foreground: 240 10% 15%;
-
-    --popover: 40 40% 97%;
-    --popover-foreground: 240 10% 15%;
-
-    /* Deep Indigo - Ajrakh inspired */
-    --primary: 230 60% 25%;
-    --primary-foreground: 42 35% 95%;
-
-    /* Warm Maroon - Bandhej inspired */
-    --secondary: 350 55% 35%;
-    --secondary-foreground: 42 35% 95%;
-
-    /* Mustard Yellow - Calls to action */
-    --mustard: 42 85% 55%;
-    --mustard-foreground: 240 10% 15%;
-
-    /* Peacock Green - Success/accent */
-    --peacock: 165 60% 35%;
-    --peacock-foreground: 42 35% 95%;
-
-    /* Terracotta Orange */
-    --terracotta: 20 70% 50%;
-    --terracotta-foreground: 42 35% 95%;
-
-    --muted: 40 25% 90%;
-    --muted-foreground: 240 10% 40%;
-
+    /* Palace-Inspired Color Palette */
+    
+    /* Pink City Jaipur - Signature colors */
+    --pink-city: 12 45% 70%; /* Terracotta pink */
+    --dusty-rose: 350 35% 65%; /* Dusty rose accent */
+    
+    /* Palace Interiors - Rich accents */
+    --maroon: 350 55% 30%; /* Deep maroon for emphasis */
+    --mustard: 42 85% 55%; /* Bright mustard gold for CTAs */
+    --indigo: 230 50% 25%; /* Rich indigo for text/grounding */
+    
+    /* Udaipur Lake Palace - Soft elegance */
+    --ivory: 40 40% 96%; /* Soft ivory background */
+    --cream: 38 45% 92%; /* Warm cream */
+    --sage: 140 20% 75%; /* Pale sage green */
+    --coral: 15 45% 75%; /* Muted coral */
+    
+    /* Main semantic colors */
+    --background: 40 40% 96%; /* Ivory base */
+    --foreground: 230 50% 20%; /* Deep indigo text */
+    
+    --card: 38 45% 94%; /* Cream cards */
+    --card-foreground: 230 50% 20%;
+    
+    --popover: 40 40% 96%;
+    --popover-foreground: 230 50% 20%;
+    
+    /* Primary: Deep Maroon (palace luxury) */
+    --primary: 350 55% 30%;
+    --primary-foreground: 40 40% 96%;
+    
+    /* Secondary: Pink City terracotta */
+    --secondary: 12 45% 70%;
+    --secondary-foreground: 230 50% 20%;
+    
+    /* Accent: Mustard Gold (celebratory) */
     --accent: 42 85% 55%;
-    --accent-foreground: 240 10% 15%;
-
+    --accent-foreground: 230 50% 20%;
+    
+    /* Peacock Green - Success states */
+    --peacock: 165 50% 40%;
+    --peacock-foreground: 40 40% 96%;
+    
+    /* Terracotta - Warmth */
+    --terracotta: 20 60% 55%;
+    --terracotta-foreground: 40 40% 96%;
+    
+    --muted: 38 30% 88%;
+    --muted-foreground: 230 30% 40%;
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 35 30% 80%;
-    --input: 35 30% 85%;
-    --ring: 230 60% 25%;
-
+    
+    --border: 35 35% 82%;
+    --input: 38 35% 88%;
+    --ring: 42 85% 55%;
+    
     --radius: 0.75rem;
-
+    
     /* Custom gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(30 40% 85%) 0%, hsl(42 35% 95%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(40 40% 97%) 0%, hsl(38 35% 93%) 100%);
-    --gradient-mustard: linear-gradient(135deg, hsl(42 85% 55%) 0%, hsl(38 80% 50%) 100%);
-    --gradient-indigo: linear-gradient(135deg, hsl(230 60% 25%) 0%, hsl(235 55% 20%) 100%);
-    --gradient-sunset: linear-gradient(180deg, hsl(30 70% 70%) 0%, hsl(20 80% 60%) 50%, hsl(350 55% 35%) 100%);
-
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(30 40% 30% / 0.15);
-    --shadow-card: 0 8px 30px -8px hsl(30 40% 30% / 0.2);
-    --shadow-lifted: 0 12px 40px -12px hsl(30 40% 30% / 0.25);
-
+    --gradient-palace: linear-gradient(180deg, hsl(40 40% 96%) 0%, hsl(38 45% 92%) 100%);
+    --gradient-sunset: linear-gradient(180deg, hsl(40 60% 92%) 0%, hsl(15 50% 85%) 50%, hsl(350 45% 80%) 100%);
+    --gradient-mustard: linear-gradient(135deg, hsl(42 85% 55%) 0%, hsl(38 80% 48%) 100%);
+    --gradient-maroon: linear-gradient(135deg, hsl(350 55% 35%) 0%, hsl(350 55% 25%) 100%);
+    --gradient-fresco: linear-gradient(145deg, hsl(40 50% 94%) 0%, hsl(30 40% 90%) 50%, hsl(40 45% 93%) 100%);
+    --gradient-pink-city: linear-gradient(135deg, hsl(12 45% 72%) 0%, hsl(350 35% 65%) 100%);
+    
+    /* Shadows with warm tones */
+    --shadow-soft: 0 4px 20px -4px hsl(30 40% 40% / 0.12);
+    --shadow-card: 0 8px 30px -8px hsl(30 40% 30% / 0.15);
+    --shadow-lifted: 0 16px 50px -12px hsl(30 40% 30% / 0.2);
+    --shadow-carved: inset 0 2px 4px hsl(0 0% 100% / 0.3), inset 0 -2px 4px hsl(0 0% 0% / 0.1), 0 4px 12px -2px hsl(30 40% 30% / 0.15);
+    
     /* Sidebar */
-    --sidebar-background: 230 60% 25%;
-    --sidebar-foreground: 42 35% 95%;
+    --sidebar-background: 350 55% 25%;
+    --sidebar-foreground: 40 40% 96%;
     --sidebar-primary: 42 85% 55%;
-    --sidebar-primary-foreground: 240 10% 15%;
-    --sidebar-accent: 230 50% 35%;
-    --sidebar-accent-foreground: 42 35% 95%;
-    --sidebar-border: 230 40% 35%;
+    --sidebar-primary-foreground: 230 50% 20%;
+    --sidebar-accent: 350 45% 35%;
+    --sidebar-accent-foreground: 40 40% 96%;
+    --sidebar-border: 350 40% 35%;
     --sidebar-ring: 42 85% 55%;
   }
 
   .dark {
     --background: 240 15% 10%;
-    --foreground: 42 35% 95%;
+    --foreground: 40 40% 96%;
     --card: 240 15% 13%;
-    --card-foreground: 42 35% 95%;
+    --card-foreground: 40 40% 96%;
     --popover: 240 15% 13%;
-    --popover-foreground: 42 35% 95%;
+    --popover-foreground: 40 40% 96%;
     --primary: 42 85% 55%;
     --primary-foreground: 240 10% 15%;
-    --secondary: 350 45% 45%;
-    --secondary-foreground: 42 35% 95%;
+    --secondary: 12 40% 50%;
+    --secondary-foreground: 40 40% 96%;
     --muted: 240 15% 20%;
-    --muted-foreground: 42 25% 70%;
-    --accent: 165 60% 40%;
+    --muted-foreground: 40 25% 70%;
+    --accent: 165 50% 45%;
     --accent-foreground: 240 10% 15%;
     --border: 240 15% 25%;
     --input: 240 15% 25%;
@@ -102,7 +118,10 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* Subtle fresco texture background */
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9a87c' fill-opacity='0.04'%3E%3Ccircle cx='25' cy='25' r='1'/%3E%3Ccircle cx='75' cy='25' r='1'/%3E%3Ccircle cx='25' cy='75' r='1'/%3E%3Ccircle cx='75' cy='75' r='1'/%3E%3Ccircle cx='50' cy='50' r='1.5'/%3E%3C/g%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L35 15 L30 12 L25 15 Z' fill='%23d4a574' fill-opacity='0.03'/%3E%3C/svg%3E");
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -111,26 +130,64 @@
 }
 
 @layer components {
-  /* Ajrakh Pattern Border */
+  /* Palace Fresco Texture */
+  .fresco-texture {
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='floral' patternUnits='userSpaceOnUse' width='40' height='40'%3E%3Cpath d='M20 5 C25 10 25 15 20 20 C15 15 15 10 20 5' stroke='%23c9a87c' stroke-opacity='0.08' fill='none'/%3E%3Ccircle cx='20' cy='20' r='2' fill='%23c9a87c' fill-opacity='0.05'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23floral)'/%3E%3C/svg%3E");
+  }
+
+  /* Ajrakh Geometric Border */
   .ajrakh-border {
     background-image: 
-      linear-gradient(90deg, hsl(230 60% 25%) 2px, transparent 2px),
-      linear-gradient(hsl(230 60% 25%) 2px, transparent 2px),
-      linear-gradient(90deg, hsl(230 60% 25% / 0.3) 1px, transparent 1px),
-      linear-gradient(hsl(230 60% 25% / 0.3) 1px, transparent 1px);
+      linear-gradient(90deg, hsl(var(--indigo)) 2px, transparent 2px),
+      linear-gradient(hsl(var(--indigo)) 2px, transparent 2px),
+      linear-gradient(90deg, hsl(var(--indigo) / 0.3) 1px, transparent 1px),
+      linear-gradient(hsl(var(--indigo) / 0.3) 1px, transparent 1px);
     background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   }
 
   /* Bandhani Dot Pattern */
   .bandhani-pattern {
-    background-image: radial-gradient(circle, hsl(350 55% 35%) 2px, transparent 2px);
+    background-image: radial-gradient(circle, hsl(var(--maroon)) 2px, transparent 2px);
     background-size: 16px 16px;
   }
 
-  /* Jharokha Arch Shape */
+  /* Jharokha Arch Frame - Signature palace window shape */
   .jharokha-arch {
-    clip-path: polygon(0 15%, 5% 5%, 20% 0, 80% 0, 95% 5%, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(
+      0% 20%, 
+      2% 12%, 
+      5% 7%, 
+      10% 3%, 
+      20% 0%, 
+      80% 0%, 
+      90% 3%, 
+      95% 7%, 
+      98% 12%, 
+      100% 20%, 
+      100% 100%, 
+      0% 100%
+    );
+  }
+
+  /* Cusped Arch (more ornate) */
+  .cusped-arch {
+    clip-path: polygon(
+      0% 25%,
+      5% 15%,
+      15% 5%,
+      25% 2%,
+      35% 0%,
+      50% 3%,
+      65% 0%,
+      75% 2%,
+      85% 5%,
+      95% 15%,
+      100% 25%,
+      100% 100%,
+      0% 100%
+    );
   }
 
   /* Scalloped Edge */
@@ -141,60 +198,120 @@
     mask-position: center top;
   }
 
-  /* Decorative Card */
-  .card-rajasthani {
-    @apply relative bg-card rounded-xl overflow-hidden;
-    background: var(--gradient-card);
-    box-shadow: var(--shadow-card);
+  /* Ornamental Border Frame */
+  .ornamental-frame {
+    border: 3px solid hsl(var(--mustard));
+    border-radius: var(--radius);
+    box-shadow: 
+      inset 0 0 0 2px hsl(var(--ivory)),
+      inset 0 0 0 5px hsl(var(--maroon) / 0.3),
+      var(--shadow-card);
   }
 
-  .card-rajasthani::before {
+  /* Carved Plaque Style (for buttons) */
+  .carved-plaque {
+    background: var(--gradient-mustard);
+    border: 2px solid hsl(var(--mustard) / 0.6);
+    box-shadow: var(--shadow-carved);
+    position: relative;
+  }
+
+  .carved-plaque::before {
     content: '';
-    @apply absolute inset-0 opacity-30 pointer-events-none;
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c4956a' fill-opacity='0.1'%3E%3Cpath d='M20 0L0 20h10L20 10l10 10h10z'/%3E%3Cpath d='M20 40L0 20h10l10 10 10-10h10z'/%3E%3C/g%3E%3C/svg%3E");
+    position: absolute;
+    inset: 3px;
+    border: 1px solid hsl(0 0% 100% / 0.2);
+    border-radius: calc(var(--radius) - 4px);
+    pointer-events: none;
   }
 
-  /* Fabric Texture */
-  .fabric-texture {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  /* Palace Card Style */
+  .palace-card {
+    @apply relative overflow-hidden rounded-xl;
+    background: var(--gradient-fresco);
+    box-shadow: var(--shadow-card);
+    border: 1px solid hsl(var(--border));
+  }
+
+  .palace-card::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c4956a' fill-opacity='0.06'%3E%3Cpath d='M30 10 Q35 20 30 30 Q25 20 30 10' /%3E%3Ccircle cx='30' cy='30' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Fabric/Silk Texture */
+  .silk-texture {
+    background-image: 
+      linear-gradient(45deg, transparent 40%, hsl(0 0% 100% / 0.02) 50%, transparent 60%),
+      linear-gradient(-45deg, transparent 40%, hsl(0 0% 100% / 0.02) 50%, transparent 60%);
+    background-size: 8px 8px;
+  }
+
+  /* Manuscript/Scroll Panel */
+  .manuscript-panel {
+    background: linear-gradient(to right, hsl(38 50% 88%) 0%, hsl(40 45% 92%) 3%, hsl(40 45% 92%) 97%, hsl(38 50% 88%) 100%);
+    border: 2px solid hsl(var(--border));
+    border-radius: var(--radius);
+    box-shadow: 
+      inset 0 0 20px hsl(30 40% 50% / 0.08),
+      var(--shadow-soft);
+  }
+
+  /* Corner Ornaments */
+  .corner-ornaments {
+    position: relative;
+  }
+
+  .corner-ornaments::before,
+  .corner-ornaments::after {
+    content: '❋';
+    position: absolute;
+    color: hsl(var(--mustard));
+    font-size: 1rem;
+    opacity: 0.7;
+  }
+
+  .corner-ornaments::before {
+    top: 8px;
+    left: 8px;
+  }
+
+  .corner-ornaments::after {
+    bottom: 8px;
+    right: 8px;
+  }
+
+  /* Lotus Border Element */
+  .lotus-border {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='20' viewBox='0 0 40 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0 C15 5 10 10 20 20 C30 10 25 5 20 0' fill='%23c9a87c' fill-opacity='0.2'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 20px;
+  }
+
+  /* Paisley Chain Border */
+  .paisley-border {
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='30' viewBox='0 0 50 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 5 Q35 5 35 15 Q35 25 25 25 Q15 25 15 15 Q15 8 25 5 M20 12 Q25 10 28 15' stroke='%23a67c52' stroke-opacity='0.15' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+  }
+
+  /* Rangoli Progress Indicator */
+  .rangoli-progress {
+    background: conic-gradient(
+      hsl(var(--mustard)) 0deg,
+      hsl(var(--pink-city)) 120deg,
+      hsl(var(--peacock)) 240deg,
+      hsl(var(--mustard)) 360deg
+    );
   }
 
   /* Button Embossed Effect */
   .btn-embossed {
-    box-shadow: 
-      inset 0 1px 0 hsl(0 0% 100% / 0.2),
-      inset 0 -2px 0 hsl(0 0% 0% / 0.1),
-      var(--shadow-soft);
-  }
-
-  /* Rangoli Progress */
-  .rangoli-progress {
-    background: conic-gradient(
-      hsl(42 85% 55%) 0deg,
-      hsl(350 55% 35%) 120deg,
-      hsl(165 60% 35%) 240deg,
-      hsl(42 85% 55%) 360deg
-    );
+    box-shadow: var(--shadow-carved);
   }
 }
 
 @layer utilities {
-  /* Decorative Corner Ornament */
-  .corner-ornament::before,
-  .corner-ornament::after {
-    content: '❋';
-    @apply absolute text-mustard opacity-60;
-    font-size: 1.25rem;
-  }
-  
-  .corner-ornament::before {
-    @apply top-2 left-2;
-  }
-  
-  .corner-ornament::after {
-    @apply bottom-2 right-2;
-  }
-
   /* Text with decorative underline */
   .text-decorated {
     @apply relative inline-block;
@@ -203,7 +320,12 @@
   .text-decorated::after {
     content: '';
     @apply absolute left-0 right-0 -bottom-1 h-0.5;
-    background: linear-gradient(90deg, transparent, hsl(42 85% 55%), transparent);
+    background: linear-gradient(90deg, transparent, hsl(var(--mustard)), transparent);
+  }
+
+  /* Warm text shadow for headings */
+  .text-shadow-warm {
+    text-shadow: 0 2px 4px hsl(30 40% 20% / 0.15);
   }
 }
 
@@ -225,28 +347,41 @@
 
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 0 20px hsl(42 85% 55% / 0.3); }
-  50% { box-shadow: 0 0 40px hsl(42 85% 55% / 0.5); }
-}
-
-@keyframes bandhani-ripple {
-  0% { transform: scale(0); opacity: 1; }
-  100% { transform: scale(4); opacity: 0; }
-}
-
-@keyframes fabric-fold {
-  0% { transform: perspective(500px) rotateX(0deg); }
-  50% { transform: perspective(500px) rotateX(-10deg); }
-  100% { transform: perspective(500px) rotateX(0deg); }
-}
-
-@keyframes confetti-fall {
-  0% { transform: translateY(-100%) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  50% { box-shadow: 0 0 35px hsl(42 85% 55% / 0.5); }
 }
 
 @keyframes diya-glow {
-  0%, 100% { filter: brightness(1) drop-shadow(0 0 10px hsl(42 85% 55% / 0.5)); }
-  50% { filter: brightness(1.2) drop-shadow(0 0 20px hsl(42 85% 55% / 0.8)); }
+  0%, 100% { 
+    filter: brightness(1) drop-shadow(0 0 8px hsl(42 85% 55% / 0.4)); 
+    transform: scale(1);
+  }
+  50% { 
+    filter: brightness(1.15) drop-shadow(0 0 15px hsl(42 85% 55% / 0.7)); 
+    transform: scale(1.05);
+  }
+}
+
+@keyframes curtain-reveal {
+  0% { transform: scaleY(0); transform-origin: top; }
+  100% { transform: scaleY(1); transform-origin: top; }
+}
+
+@keyframes rangoli-fill {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes lamp-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+  75% { opacity: 0.95; }
+}
+
+@keyframes petal-fall {
+  0% { transform: translateY(-20px) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
 
 .animate-float {
@@ -254,51 +389,64 @@
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, hsl(42 85% 55% / 0.3), transparent);
+  background: linear-gradient(90deg, transparent, hsl(42 85% 55% / 0.2), transparent);
   background-size: 200% 100%;
-  animation: shimmer 2s ease-in-out infinite;
+  animation: shimmer 2.5s ease-in-out infinite;
 }
 
 .animate-spin-slow {
-  animation: spin-slow 8s linear infinite;
+  animation: spin-slow 10s linear infinite;
 }
 
 .animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+  animation: pulse-glow 2.5s ease-in-out infinite;
 }
 
 .animate-diya {
-  animation: diya-glow 1.5s ease-in-out infinite;
+  animation: diya-glow 2s ease-in-out infinite;
+}
+
+.animate-lamp-flicker {
+  animation: lamp-flicker 1s ease-in-out infinite;
 }
 
 /* Hover Effects */
 .hover-lift {
-  @apply transition-all duration-300 ease-out;
+  @apply transition-all duration-400 ease-out;
 }
 
 .hover-lift:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-lifted);
 }
 
-.hover-fabric:hover {
-  animation: fabric-fold 0.4s ease-out;
+.hover-illuminate:hover {
+  box-shadow: 
+    var(--shadow-lifted),
+    0 0 30px hsl(42 85% 55% / 0.15);
 }
 
-/* Custom Scrollbar */
+/* Graceful page transitions */
+.page-enter {
+  animation: curtain-reveal 0.6s ease-out forwards;
+}
+
+/* Custom Scrollbar with palace styling */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(40 25% 90%);
+  background: hsl(var(--cream));
+  border-left: 1px solid hsl(var(--border));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(230 60% 25%);
-  border-radius: 5px;
+  background: linear-gradient(180deg, hsl(var(--maroon)) 0%, hsl(var(--maroon) / 0.8) 100%);
+  border-radius: 6px;
+  border: 2px solid hsl(var(--cream));
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(230 55% 35%);
+  background: linear-gradient(180deg, hsl(var(--maroon)) 0%, hsl(var(--pink-city)) 100%);
 }
