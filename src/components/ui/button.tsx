@@ -9,29 +9,22 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-carved",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 btn-embossed",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-soft",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 btn-embossed",
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Palace-styled variants
-        mustard: "bg-gradient-mustard text-foreground font-semibold shadow-carved hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0 border-2 border-mustard/30",
-        maroon: "bg-gradient-maroon text-primary-foreground shadow-carved hover:brightness-110 border-2 border-maroon/30",
-        peacock: "bg-peacock text-peacock-foreground hover:bg-peacock/90 shadow-carved",
-        // Hero CTA - ornamental plaque style
-        hero: "carved-plaque text-foreground text-lg px-10 py-6 rounded-xl font-display tracking-wide hover:brightness-110 hover:-translate-y-1 active:translate-y-0 animate-illuminate",
-        // Carved panel button
-        carved: "bg-ivory text-foreground border-2 border-border shadow-carved hover:border-mustard hover:shadow-lifted relative overflow-hidden",
-        // Fabric swatch style
-        fabric: "bg-cream text-foreground border-2 border-border silk-texture hover:border-pink-city shadow-soft hover:shadow-card",
-        // Tile button
-        tile: "bg-gradient-fresco text-foreground border border-border rounded-md shadow-soft hover:shadow-card hover:-translate-y-0.5 fresco-texture",
+        mustard: "bg-gradient-mustard text-mustard-foreground hover:brightness-110 btn-embossed shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0",
+        maroon: "bg-secondary text-secondary-foreground hover:bg-secondary/90 btn-embossed shadow-md hover:shadow-lg",
+        peacock: "bg-peacock text-peacock-foreground hover:bg-peacock/90 btn-embossed",
+        hero: "bg-gradient-mustard text-mustard-foreground text-lg px-8 py-6 rounded-xl font-display tracking-wide hover:brightness-110 btn-embossed shadow-xl hover:shadow-2xl hover:-translate-y-1 active:translate-y-0 animate-pulse-glow",
+        fabric: "bg-card text-foreground border-2 border-border hover:border-mustard hover-fabric shadow-soft",
       },
       size: {
-        default: "h-10 px-5 py-2",
-        sm: "h-9 rounded-md px-4",
-        lg: "h-12 rounded-lg px-8",
+        default: "h-10 px-4 py-2",
+        sm: "h-9 rounded-md px-3",
+        lg: "h-11 rounded-lg px-8",
         xl: "h-14 rounded-xl px-10 text-lg",
         icon: "h-10 w-10",
       },

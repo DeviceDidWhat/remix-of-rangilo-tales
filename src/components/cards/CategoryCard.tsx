@@ -21,7 +21,7 @@ export const CategoryCard = ({
 }: CategoryCardProps) => {
   return (
     <article 
-      className="group relative overflow-hidden rounded-xl hover-lift cursor-pointer animate-slide-up ornamental-frame"
+      className="group relative overflow-hidden rounded-2xl hover-lift cursor-pointer animate-slide-up"
       style={{ animationDelay: `${delay}s` }}
     >
       {/* Background with gradient */}
@@ -30,61 +30,61 @@ export const CategoryCard = ({
         gradient
       )} />
       
-      {/* Fresco texture overlay */}
-      <div className="absolute inset-0 fresco-texture opacity-20" />
-      
-      {/* Decorative pattern overlay */}
+      {/* Pattern overlay */}
       <div 
-        className="absolute inset-0 opacity-15"
+        className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `radial-gradient(circle, ${patternColor} 1.5px, transparent 1.5px)`,
-          backgroundSize: "18px 18px"
+          backgroundImage: `radial-gradient(circle, ${patternColor} 2px, transparent 2px)`,
+          backgroundSize: "20px 20px"
         }}
       />
 
-      {/* Ornamental corner brackets */}
-      <div className="absolute top-3 left-3 w-8 h-8 border-l-2 border-t-2 border-ivory/40 rounded-tl-sm" />
-      <div className="absolute top-3 right-3 w-8 h-8 border-r-2 border-t-2 border-ivory/40 rounded-tr-sm" />
-      <div className="absolute bottom-3 left-3 w-8 h-8 border-l-2 border-b-2 border-ivory/40 rounded-bl-sm" />
-      <div className="absolute bottom-3 right-3 w-8 h-8 border-r-2 border-b-2 border-ivory/40 rounded-br-sm" />
+      {/* Decorative corner arches */}
+      <div className="absolute top-0 left-0 w-16 h-16 opacity-20">
+        <svg viewBox="0 0 64 64" className="w-full h-full fill-current text-white">
+          <path d="M0,0 Q32,0 32,32 L0,32 Z" />
+        </svg>
+      </div>
+      <div className="absolute top-0 right-0 w-16 h-16 opacity-20 rotate-90">
+        <svg viewBox="0 0 64 64" className="w-full h-full fill-current text-white">
+          <path d="M0,0 Q32,0 32,32 L0,32 Z" />
+        </svg>
+      </div>
 
       {/* Content */}
-      <div className="relative z-10 p-6 md:p-8 text-ivory min-h-[300px] flex flex-col">
-        {/* Icon in decorative frame */}
-        <div className="mb-5">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-ivory/15 backdrop-blur-sm border border-ivory/20 animate-float" style={{ animationDelay: `${delay * 0.5}s` }}>
-            <span className="text-4xl">{icon}</span>
-          </div>
+      <div className="relative z-10 p-6 md:p-8 text-white min-h-[280px] flex flex-col">
+        {/* Icon */}
+        <div className="text-5xl mb-4 animate-float" style={{ animationDelay: `${delay * 0.5}s` }}>
+          {icon}
         </div>
 
-        {/* Title in decorative cartouche style */}
-        <h3 className="text-2xl md:text-3xl font-display mb-3 group-hover:text-mustard transition-colors text-shadow-warm">
+        {/* Title */}
+        <h3 className="text-2xl md:text-3xl font-display mb-2 group-hover:text-mustard transition-colors">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="text-ivory/80 text-sm leading-relaxed mb-5 flex-grow line-clamp-3">
+        <p className="text-white/80 text-sm mb-4 flex-grow line-clamp-2">
           {description}
         </p>
 
-        {/* Game count badge and action */}
-        <div className="flex items-center justify-between pt-4 border-t border-ivory/20">
-          <span className="inline-flex items-center gap-2 bg-ivory/15 backdrop-blur-sm px-4 py-2 rounded-lg text-sm font-medium border border-ivory/10">
+        {/* Game count badge */}
+        <div className="flex items-center justify-between">
+          <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium">
             <span className="text-mustard">🎮</span>
             {gameCount} Games
           </span>
           
-          {/* Arrow button - carved plaque style */}
-          <span className="w-11 h-11 rounded-lg bg-ivory/15 backdrop-blur-sm flex items-center justify-center group-hover:bg-mustard group-hover:text-foreground transition-all duration-300 group-hover:translate-x-1 border border-ivory/20 group-hover:border-mustard text-lg">
+          {/* Arrow indicator */}
+          <span className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-mustard group-hover:text-mustard-foreground transition-all duration-300 group-hover:translate-x-1">
             →
           </span>
         </div>
       </div>
 
-      {/* Hover illumination effect */}
+      {/* Hover glow effect */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-radial from-mustard/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
       </div>
     </article>
   );

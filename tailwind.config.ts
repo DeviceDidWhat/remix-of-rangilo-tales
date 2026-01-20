@@ -51,10 +51,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Palace-inspired palette
         mustard: {
           DEFAULT: "hsl(var(--mustard))",
-          foreground: "hsl(var(--accent-foreground))",
+          foreground: "hsl(var(--mustard-foreground))",
         },
         peacock: {
           DEFAULT: "hsl(var(--peacock))",
@@ -63,31 +62,6 @@ export default {
         terracotta: {
           DEFAULT: "hsl(var(--terracotta))",
           foreground: "hsl(var(--terracotta-foreground))",
-        },
-        maroon: {
-          DEFAULT: "hsl(var(--maroon))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        ivory: {
-          DEFAULT: "hsl(var(--ivory))",
-        },
-        cream: {
-          DEFAULT: "hsl(var(--cream))",
-        },
-        "pink-city": {
-          DEFAULT: "hsl(var(--pink-city))",
-        },
-        "dusty-rose": {
-          DEFAULT: "hsl(var(--dusty-rose))",
-        },
-        sage: {
-          DEFAULT: "hsl(var(--sage))",
-        },
-        coral: {
-          DEFAULT: "hsl(var(--coral))",
-        },
-        indigo: {
-          DEFAULT: "hsl(var(--indigo))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -115,56 +89,41 @@ export default {
           to: { height: "0" },
         },
         "fade-in": {
-          "0%": { opacity: "0", transform: "translateY(15px)" },
+          "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "slide-up": {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "0%": { opacity: "0", transform: "translateY(40px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "scale-in": {
-          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "0%": { opacity: "0", transform: "scale(0.9)" },
           "100%": { opacity: "1", transform: "scale(1)" },
         },
         "wave": {
           "0%, 100%": { transform: "rotate(-3deg)" },
           "50%": { transform: "rotate(3deg)" },
         },
-        "gentle-sway": {
-          "0%, 100%": { transform: "rotate(-1deg) translateX(-2px)" },
-          "50%": { transform: "rotate(1deg) translateX(2px)" },
-        },
-        "illuminate": {
-          "0%, 100%": { boxShadow: "0 0 15px hsl(42 85% 55% / 0.2)" },
-          "50%": { boxShadow: "0 0 30px hsl(42 85% 55% / 0.4)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out forwards",
-        "slide-up": "slide-up 0.6s ease-out forwards",
-        "scale-in": "scale-in 0.4s ease-out forwards",
-        "wave": "wave 2.5s ease-in-out infinite",
-        "gentle-sway": "gentle-sway 4s ease-in-out infinite",
-        "illuminate": "illuminate 2s ease-in-out infinite",
+        "fade-in": "fade-in 0.6s ease-out forwards",
+        "slide-up": "slide-up 0.8s ease-out forwards",
+        "scale-in": "scale-in 0.5s ease-out forwards",
+        "wave": "wave 2s ease-in-out infinite",
       },
       backgroundImage: {
-        'gradient-palace': 'var(--gradient-palace)',
-        'gradient-sunset': 'var(--gradient-sunset)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
         'gradient-mustard': 'var(--gradient-mustard)',
-        'gradient-maroon': 'var(--gradient-maroon)',
-        'gradient-fresco': 'var(--gradient-fresco)',
-        'gradient-pink-city': 'var(--gradient-pink-city)',
+        'gradient-indigo': 'var(--gradient-indigo)',
+        'gradient-sunset': 'var(--gradient-sunset)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'card': 'var(--shadow-card)',
         'lifted': 'var(--shadow-lifted)',
-        'carved': 'var(--shadow-carved)',
-      },
-      transitionDuration: {
-        '400': '400ms',
       },
     },
   },
