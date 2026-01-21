@@ -249,44 +249,6 @@
   50% { filter: brightness(1.2) drop-shadow(0 0 20px hsl(42 85% 55% / 0.8)); }
 }
 
-@keyframes slide-in-left {
-  0% { 
-    opacity: 0; 
-    transform: translateX(-60px) scale(0.95); 
-  }
-  100% { 
-    opacity: 1; 
-    transform: translateX(0) scale(1); 
-  }
-}
-
-@keyframes slide-in-right {
-  0% { 
-    opacity: 0; 
-    transform: translateX(60px) scale(0.95); 
-  }
-  100% { 
-    opacity: 1; 
-    transform: translateX(0) scale(1); 
-  }
-}
-
-@keyframes slide-in-up {
-  0% { 
-    opacity: 0; 
-    transform: translateY(40px); 
-  }
-  100% { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
-}
-
-@keyframes bounce-gentle {
-  0%, 100% { transform: scale(1.25) rotate(-6deg); }
-  50% { transform: scale(1.35) rotate(-6deg) translateY(-8px); }
-}
-
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
@@ -307,18 +269,6 @@
 
 .animate-diya {
   animation: diya-glow 1.5s ease-in-out infinite;
-}
-
-.animate-slide-in-left {
-  animation: slide-in-left 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.animate-slide-in-right {
-  animation: slide-in-right 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.animate-slide-in-up {
-  animation: slide-in-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* Hover Effects */
