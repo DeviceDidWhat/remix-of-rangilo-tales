@@ -146,7 +146,8 @@ const CategoryPage = () => {
                 <GameCard
                   key={game.id}
                   {...game}
-                  delay={index * 0.05}
+                  index={index}
+                  delay={index * 0.08}
                 />
               ))}
             </div>
