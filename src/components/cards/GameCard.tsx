@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import type { Game } from "@/data/games";
 
@@ -23,7 +22,6 @@ const DifficultyStars = ({ difficulty }: { difficulty: 'easy' | 'medium' | 'hard
 };
 
 export const GameCard = ({ 
-  id,
   title, 
   description, 
   difficulty,
@@ -31,8 +29,14 @@ export const GameCard = ({
   icon, 
   gradient,
   patternColor,
+  externalUrl,
   delay = 0 
 }: GameCardProps) => {
+  const handlePlayClick = () => {
+    if (externalUrl) {
+      window.open(externalUrl, '_blank', 'noopener,noreferrer');
+    }
+  };
   return (
     <div 
       className="group card-rajasthani hover-lift overflow-hidden"
@@ -91,15 +95,15 @@ export const GameCard = ({
         </div>
 
         {/* Play button */}
-        <Link to={`/game/${id}`}>
-          <Button 
-            variant="mustard" 
-            className="w-full group-hover:shadow-lg transition-shadow"
-          >
-            Play Now
-            <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-          </Button>
-        </Link>
+        <Button 
+          variant="mustard" 
+          className="w-full group-hover:shadow-lg transition-shadow"
+          onClick={handlePlayClick}
+          disabled={!externalUrl}
+        >
+          {externalUrl ? 'Play Now' : 'Coming Soon'}
+          {externalUrl && <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>}
+        </Button>
       </div>
 
       {/* Bottom decorative border */}

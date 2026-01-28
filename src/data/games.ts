@@ -8,295 +8,261 @@ export interface Game {
   icon: string;
   gradient: string;
   patternColor: string;
+  externalUrl?: string;
 }
 
 export const games: Game[] = [
   // Textiles & Prints
   {
     id: "bandhani-matching",
-    title: "Bandhani Pattern Match",
-    description: "Match the traditional tie-dye patterns to their region of origin",
+    title: "Bandhej Designer",
+    description: "Create beautiful Bandhani tie-dye patterns with traditional techniques",
     category: "textiles",
     difficulty: "easy",
     playTime: 5,
     icon: "🎯",
     gradient: "bg-gradient-to-br from-primary to-primary/80",
-    patternColor: "#d4a574"
+    patternColor: "#d4a574",
+    externalUrl: "https://bandhejio.vercel.app/"
   },
   {
     id: "ajrakh-puzzle",
-    title: "Ajrakh Block Puzzle",
-    description: "Arrange the block print stamps to complete the traditional pattern",
+    title: "Block Print Story",
+    description: "Discover the art of Rajasthani block printing and stamp patterns",
     category: "textiles",
     difficulty: "medium",
     playTime: 10,
     icon: "🧩",
     gradient: "bg-gradient-to-br from-primary via-primary/90 to-secondary/60",
-    patternColor: "#e8d5c4"
+    patternColor: "#e8d5c4",
+    externalUrl: "https://rajasthani-stamp-story.lovable.app/"
   },
   {
     id: "fabric-quiz",
-    title: "Fabric Detective",
-    description: "Identify Rajasthani fabrics by their texture, color, and weave",
+    title: "Desert Diva",
+    description: "Explore the vibrant world of Rajasthani desert fashion and textiles",
     category: "textiles",
     difficulty: "hard",
     playTime: 8,
-    icon: "🔍",
+    icon: "👗",
     gradient: "bg-gradient-to-br from-secondary to-secondary/80",
-    patternColor: "#f5c542"
+    patternColor: "#f5c542",
+    externalUrl: "https://desert-diva.vercel.app/"
   },
   {
-    id: "dye-mixing",
-    title: "Natural Dye Lab",
-    description: "Learn to mix natural dyes to create traditional Rajasthani colors",
+    id: "hidden-prints",
+    title: "Hidden Prints",
+    description: "Uncover the secrets of traditional Rajasthani block print designs",
     category: "textiles",
     difficulty: "medium",
     playTime: 7,
-    icon: "🧪",
+    icon: "🔍",
     gradient: "bg-gradient-to-br from-peacock to-peacock/80",
-    patternColor: "#fff5e6"
+    patternColor: "#fff5e6",
+    externalUrl: "https://hiddenprints.netlify.app/"
   },
   {
-    id: "weaving-rhythm",
-    title: "Weaving Rhythm",
-    description: "Follow the loom patterns in this rhythmic weaving challenge",
+    id: "mandana-art",
+    title: "Mandana Art",
+    description: "Draw traditional Mandana floor paintings with geometric patterns",
     category: "textiles",
     difficulty: "easy",
     playTime: 5,
-    icon: "🧵",
+    icon: "✨",
     gradient: "bg-gradient-to-br from-terracotta to-terracotta/80",
-    patternColor: "#d4a574"
+    patternColor: "#d4a574",
+    externalUrl: "https://digital-society-uzmr.vercel.app/#draw"
   },
 
   // Folk Art & Handicrafts
   {
-    id: "phad-story",
-    title: "Phad Painting Story",
-    description: "Arrange the story panels of this traditional scroll painting",
+    id: "kathputli-master",
+    title: "Kathputli Master",
+    description: "Learn the art of traditional Rajasthani puppet making and storytelling",
     category: "folk-art",
     difficulty: "medium",
     playTime: 12,
-    icon: "🎨",
+    icon: "🎭",
     gradient: "bg-gradient-to-br from-secondary to-secondary/80",
-    patternColor: "#f5c542"
+    patternColor: "#f5c542",
+    externalUrl: "https://kathputlimaster-digitalsociety.vercel.app/"
   },
   {
-    id: "blue-pottery",
-    title: "Blue Pottery Designer",
-    description: "Design your own Jaipur blue pottery with traditional motifs",
+    id: "kathputli-info",
+    title: "Kathputli Chronicles",
+    description: "Discover the rich history and cultural significance of Kathputli puppetry",
     category: "folk-art",
     difficulty: "easy",
     playTime: 8,
-    icon: "🏺",
+    icon: "📜",
     gradient: "bg-gradient-to-br from-peacock to-primary/80",
-    patternColor: "#fff5e6"
+    patternColor: "#fff5e6",
+    externalUrl: "https://drive.google.com/file/d/1JJbvgElhSgIlOrjPhz1wKgrnvI22Pu_1/view"
   },
   {
-    id: "lac-bangles",
-    title: "Lac Bangle Creator",
-    description: "Craft colorful lac bangles using traditional techniques",
+    id: "pabuji-story",
+    title: "Pabuji Ki Phad",
+    description: "Experience the legendary tale of Pabuji through traditional scroll art",
     category: "folk-art",
     difficulty: "medium",
     playTime: 10,
-    icon: "💎",
+    icon: "🏇",
     gradient: "bg-gradient-to-br from-terracotta to-mustard/80",
-    patternColor: "#4a3728"
+    patternColor: "#4a3728",
+    externalUrl: "https://priyanshu8058.github.io/Humanity_Digital_Society/"
   },
   {
-    id: "puppet-maker",
-    title: "Kathputli Puppet Maker",
-    description: "Create your own Rajasthani string puppet character",
+    id: "story-place",
+    title: "Story Place",
+    description: "Immerse yourself in the storytelling traditions of Rajasthan",
     category: "folk-art",
     difficulty: "hard",
     playTime: 15,
-    icon: "🎭",
+    icon: "📖",
     gradient: "bg-gradient-to-br from-secondary via-terracotta to-mustard/60",
-    patternColor: "#d4a574"
+    patternColor: "#d4a574",
+    externalUrl: "https://b23cs1037-digital-society.vercel.app/"
   },
 
   // Desert Life & Nature
   {
-    id: "camel-trek",
-    title: "Camel Caravan",
-    description: "Navigate a camel caravan through the Thar desert",
+    id: "interactive-map",
+    title: "Rajasthan Explorer",
+    description: "Navigate an interactive map of Rajasthan's cultural landmarks",
     category: "desert-life",
     difficulty: "easy",
     playTime: 6,
-    icon: "🐪",
+    icon: "🗺️",
     gradient: "bg-gradient-to-br from-terracotta to-terracotta/80",
-    patternColor: "#fff5e6"
+    patternColor: "#fff5e6",
+    externalUrl: "https://digital-society-rajasthan.onrender.com/"
   },
   {
-    id: "desert-wildlife",
-    title: "Desert Wildlife Spotter",
-    description: "Identify animals and plants that survive in the Thar",
+    id: "market-map",
+    title: "Market Navigator",
+    description: "Explore the vibrant bazaars and markets of Rajasthan",
     category: "desert-life",
     difficulty: "medium",
     playTime: 8,
-    icon: "🦎",
+    icon: "🏪",
     gradient: "bg-gradient-to-br from-mustard/90 to-terracotta/80",
-    patternColor: "#4a3728"
+    patternColor: "#4a3728",
+    externalUrl: "https://mellow-panda-05bdb9.netlify.app/"
   },
   {
-    id: "water-harvest",
-    title: "Water Wisdom",
-    description: "Learn traditional water harvesting methods of Rajasthan",
+    id: "desert-adventure",
+    title: "Desert Adventure",
+    description: "Experience the magic of the Thar desert landscape",
     category: "desert-life",
     difficulty: "hard",
     playTime: 12,
-    icon: "💧",
+    icon: "🏜️",
     gradient: "bg-gradient-to-br from-peacock to-primary/80",
-    patternColor: "#fff5e6"
+    patternColor: "#fff5e6",
+    externalUrl: "https://desert-4mpbjr7tk-anshuman-paridas-projects-4e6b1500.vercel.app/"
   },
   {
-    id: "stepwell-explore",
-    title: "Stepwell Explorer",
-    description: "Explore the architectural wonders of Rajasthani stepwells",
+    id: "jhalara-digs",
+    title: "Jhalara Artifact Digs",
+    description: "Discover hidden treasures in ancient Rajasthani stepwells",
     category: "desert-life",
     difficulty: "medium",
     playTime: 10,
     icon: "🏛️",
     gradient: "bg-gradient-to-br from-primary to-peacock/80",
-    patternColor: "#d4a574"
+    patternColor: "#d4a574",
+    externalUrl: "https://ihagoyal21.github.io/jhalara-artifact-digs/"
   },
 
   // Music & Dance
   {
-    id: "ghoomar-steps",
-    title: "Ghoomar Dance",
-    description: "Learn the graceful spinning movements of Ghoomar",
+    id: "kalbelia-dance",
+    title: "Kalbeliya Dance",
+    description: "Master the mesmerizing snake-like movements of Kalbelia",
     category: "music-dance",
     difficulty: "medium",
     playTime: 8,
-    icon: "💃",
+    icon: "🐍",
     gradient: "bg-gradient-to-br from-peacock to-peacock/80",
-    patternColor: "#f5c542"
+    patternColor: "#f5c542",
+    externalUrl: "https://dushyant-nikhil-assignment.vercel.app/explore"
   },
   {
-    id: "folk-instruments",
-    title: "Instrument Orchestra",
-    description: "Identify and play traditional Rajasthani instruments",
+    id: "folk-music",
+    title: "Folk Music Journey",
+    description: "Experience the rich musical heritage of Rajasthan",
     category: "music-dance",
     difficulty: "easy",
     playTime: 6,
     icon: "🎵",
     gradient: "bg-gradient-to-br from-secondary to-terracotta/80",
-    patternColor: "#fff5e6"
+    patternColor: "#fff5e6",
+    externalUrl: "https://digisoc.vercel.app/"
   },
   {
-    id: "kalbelia-rhythm",
-    title: "Kalbelia Rhythm",
-    description: "Master the snake-like movements of Kalbelia dance",
+    id: "ravanhatta",
+    title: "Ravanhatta Player",
+    description: "Learn about the ancient bowed string instrument of Rajasthan",
     category: "music-dance",
     difficulty: "hard",
     playTime: 10,
-    icon: "🐍",
+    icon: "🎻",
     gradient: "bg-gradient-to-br from-primary to-secondary/80",
-    patternColor: "#f5c542"
+    patternColor: "#f5c542",
+    externalUrl: "https://raghavmaliwal.github.io/Ravanhatta/"
   },
   {
-    id: "folk-song-quiz",
-    title: "Folk Song Stories",
-    description: "Discover the stories behind traditional Rajasthani songs",
+    id: "digital-culture",
+    title: "Digital Culture Hub",
+    description: "Explore Rajasthani culture through interactive digital experiences",
     category: "music-dance",
     difficulty: "medium",
     playTime: 7,
-    icon: "🎤",
+    icon: "🎭",
     gradient: "bg-gradient-to-br from-terracotta via-secondary to-primary/60",
-    patternColor: "#d4a574"
+    patternColor: "#d4a574",
+    externalUrl: "https://digital-society-sigma.vercel.app/"
   },
 
   // Cuisine & Spices
   {
-    id: "dal-baati",
-    title: "Dal Baati Master",
-    description: "Cook the perfect Dal Baati Churma step by step",
+    id: "flavors-jodhpur",
+    title: "Flavors of Jodhpur",
+    description: "Discover the authentic tastes and recipes of Jodhpur cuisine",
     category: "cuisine",
     difficulty: "medium",
     playTime: 12,
     icon: "🍛",
     gradient: "bg-gradient-to-br from-mustard/90 to-terracotta/80",
-    patternColor: "#4a3728"
+    patternColor: "#4a3728",
+    externalUrl: "https://flavors-of-jodhpur.vercel.app/"
   },
   {
-    id: "spice-detective",
-    title: "Spice Detective",
-    description: "Identify spices by color, shape, and use in Rajasthani cooking",
+    id: "jodhpur-tour",
+    title: "Jodhpur Food Tour",
+    description: "Take a virtual food tour through the blue city's best eateries",
     category: "cuisine",
     difficulty: "easy",
     playTime: 5,
-    icon: "🌶️",
+    icon: "🥘",
     gradient: "bg-gradient-to-br from-terracotta to-secondary/80",
-    patternColor: "#f5c542"
-  },
-  {
-    id: "ghewar-challenge",
-    title: "Ghewar Challenge",
-    description: "Create the intricate honeycomb sweet of Rajasthan",
-    category: "cuisine",
-    difficulty: "hard",
-    playTime: 15,
-    icon: "🍯",
-    gradient: "bg-gradient-to-br from-mustard to-terracotta/80",
-    patternColor: "#4a3728"
-  },
-  {
-    id: "thali-builder",
-    title: "Royal Thali Builder",
-    description: "Arrange a traditional Rajasthani thali with all courses",
-    category: "cuisine",
-    difficulty: "medium",
-    playTime: 8,
-    icon: "🍽️",
-    gradient: "bg-gradient-to-br from-secondary to-mustard/80",
-    patternColor: "#fff5e6"
+    patternColor: "#f5c542",
+    externalUrl: "https://jodhpur-tour-aec4c.web.app/"
   },
 
-  // Festivals & Traditions
+  // Festivals & Traditions (Puzzles & Games)
   {
-    id: "pushkar-mela",
-    title: "Pushkar Mela Adventure",
-    description: "Experience the famous Pushkar camel fair",
-    category: "festivals",
-    difficulty: "easy",
-    playTime: 8,
-    icon: "🎪",
-    gradient: "bg-gradient-to-br from-secondary to-peacock/80",
-    patternColor: "#fff5e6"
-  },
-  {
-    id: "teej-celebration",
-    title: "Teej Traditions",
-    description: "Learn the customs and songs of the Teej festival",
+    id: "sliding-puzzle",
+    title: "Rajasthan Puzzle",
+    description: "Solve sliding puzzles featuring iconic Rajasthani locations",
     category: "festivals",
     difficulty: "medium",
-    playTime: 10,
-    icon: "🌙",
-    gradient: "bg-gradient-to-br from-peacock to-secondary/80",
-    patternColor: "#f5c542"
+    playTime: 8,
+    icon: "🧩",
+    gradient: "bg-gradient-to-br from-secondary to-peacock/80",
+    patternColor: "#fff5e6",
+    externalUrl: "https://sliding-game.vercel.app/select"
   },
-  {
-    id: "gangaur-procession",
-    title: "Gangaur Celebration",
-    description: "Join the colorful Gangaur festival procession",
-    category: "festivals",
-    difficulty: "easy",
-    playTime: 6,
-    icon: "👑",
-    gradient: "bg-gradient-to-br from-terracotta to-mustard/80",
-    patternColor: "#4a3728"
-  },
-  {
-    id: "holi-colors",
-    title: "Holi Color Splash",
-    description: "Mix and throw colors in this Holi celebration game",
-    category: "festivals",
-    difficulty: "easy",
-    playTime: 5,
-    icon: "🎨",
-    gradient: "bg-gradient-to-br from-peacock via-terracotta to-secondary",
-    patternColor: "#fff5e6"
-  }
 ];
 
 export const categories = {
